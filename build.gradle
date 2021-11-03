@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+mainClassName = 'AssignmentB.Driver'
+
+repositories {
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    // https://mvnrepository.com/artifact/org.terasoluna.gfw/terasoluna-gfw-jodatime
+    implementation group: 'org.terasoluna.gfw', name: 'terasoluna-gfw-jodatime', version: '5.7.0.RELEASE'
+    implementation 'com.github.Reddington35:AssignmentA:4598e1207d'
+}
